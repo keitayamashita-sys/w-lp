@@ -12,9 +12,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&amp;display=swap">
 <style>
-body { margin:0; background:#e4e8ec; color:#1f2933; font-family:"Noto Sans JP", system-ui, -apple-system, sans-serif; font-size:15px; line-height:1.8; -webkit-font-smoothing:antialiased; }
+body { margin:0; background:#e0dbd0; color:#1a2420; font-family:"Noto Sans JP", system-ui, -apple-system, sans-serif; font-size:15px; line-height:1.8; -webkit-font-smoothing:antialiased; }
 * { box-sizing:border-box; }
-a { color:#1a5fa8; }
+a { color:#145041; }
 a[style*="background:linear-gradient"]:hover, button:hover { filter:brightness(1.08); }
 @keyframes marquee { from { transform:translateX(0); } to { transform:translateX(-50%); } }
 @keyframes fadeUp { from { opacity:0; transform:translateY(18px); } to { opacity:1; transform:translateY(0); } }
@@ -23,76 +23,76 @@ a[style*="background:linear-gradient"]:hover, button:hover { filter:brightness(1
 details summary::-webkit-details-marker { display:none; }
 details summary { list-style:none; }
 :focus { outline:none; }
-:focus-visible { outline:2px solid #1a5fa8; outline-offset:2px; }
-input:focus, select:focus { border-color:#1a5fa8 !important; }
-.sel { width:100%; font:inherit; font-size:14px; font-weight:500; padding:14px 40px 14px 16px; border:1px solid rgba(38,34,30,0.18); background-color:#f4f6f8; color:#1f2933; cursor:pointer; -webkit-appearance:none; appearance:none; background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='9' viewBox='0 0 14 9'%3E%3Cpath d='M1 1l6 6 6-6' fill='none' stroke='%231a5fa8' stroke-width='2'/%3E%3C/svg%3E"); background-repeat:no-repeat; background-position:right 16px center; border-radius:0; }
-.sel:invalid { color:#64717f; }
+:focus-visible { outline:2px solid #a3853f; outline-offset:2px; }
+input:focus, select:focus { border-color:#a3853f !important; }
+.sel { width:100%; font:inherit; font-size:14px; font-weight:500; padding:14px 40px 14px 16px; border:1px solid rgba(38,34,30,0.18); background-color:#f7f5f0; color:#1a2420; cursor:pointer; -webkit-appearance:none; appearance:none; background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='9' viewBox='0 0 14 9'%3E%3Cpath d='M1 1l6 6 6-6' fill='none' stroke='%23a3853f' stroke-width='2'/%3E%3C/svg%3E"); background-repeat:no-repeat; background-position:right 16px center; border-radius:0; }
+.sel:invalid { color:#6a746e; }
 .bar-hidden { display:none; }
 @media (prefers-reduced-motion: reduce) { * { animation:none !important; } }
 </style>
 </head>
 <body>
-<div style="max-width:430px;margin:0 auto;background:#ffffff;min-height:100vh;display:flex;flex-direction:column;box-shadow:0 0 40px rgba(31,41,51,0.25)">
+<div style="max-width:430px;margin:0 auto;background:#ffffff;min-height:100vh;display:flex;flex-direction:column;box-shadow:0 0 40px rgba(13,59,46,0.25)">
 
-  <header style="display:flex;align-items:center;gap:10px;padding:12px 16px;background:rgba(255,255,255,0.96);border-bottom:1px solid rgba(31,41,51,0.12)">
+  <header style="display:flex;align-items:center;gap:10px;padding:12px 16px;background:rgba(255,255,255,0.96);border-bottom:1px solid rgba(13,59,46,0.12)">
     <a href="index.html" style="display:block;text-decoration:none"><img src="assets/logo-w-red.png" alt="W" style="height:24px;width:auto;display:block"></a>
-    <div style="font-size:10px;line-height:1.5;color:#64717f;font-weight:500">経営者人脈から決裁者へ<br>直接つなぐ営業支援</div>
+    <div style="font-size:10px;line-height:1.5;color:#6a746e;font-weight:500">経営者人脈から決裁者へ<br>直接つなぐ営業支援</div>
   </header>
 
   <div style="flex:1">
-    <section style="background:#1e2a35;padding:48px 24px;color:#eef2f6;text-align:center;position:relative;overflow:hidden">
+    <section style="background:linear-gradient(160deg,#1d6b56 0%,#145041 34%,#0d3b2e 70%,#08281f 100%);padding:48px 24px;color:#e8ede9;text-align:center;position:relative;overflow:hidden">
       <div style="position:absolute;inset:0;background:none;pointer-events:none"></div>
       <div style="position:relative">
-        <div style="width:56px;height:56px;border-radius:50%;background:#1a5fa8;color:#fff;font-size:24px;font-weight:900;display:flex;align-items:center;justify-content:center;margin:0 auto 20px;box-shadow:0 10px 24px rgba(26,95,168,0.45)">✓</div>
-        <h1 style="font-size:23px;line-height:1.8;margin:0;font-weight:900;color:#f4f6f8;letter-spacing:0.02em">お問い合わせを<br>受け付けました</h1>
-        <div style="width:52px;height:1px;background:#4a8ed0;margin:16px auto"></div>
-        <p style="font-size:13px;line-height:2.1;color:#b9c3cd;margin:0">1営業日以内に、担当よりメールまたは<br>お電話でご連絡いたします。</p>
-        <p style="font-size:11px;line-height:1.9;color:#8a95a1;margin:14px 0 0">数日経っても連絡がない場合は、<br>迷惑メールフォルダをご確認ください。</p>
+        <div style="width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,#e6cf9c 0%,#c9ab68 45%,#a3853f 100%);color:#132b22;font-size:24px;font-weight:900;display:flex;align-items:center;justify-content:center;margin:0 auto 20px;box-shadow:0 10px 24px rgba(26,95,168,0.45)">✓</div>
+        <h1 style="font-size:23px;line-height:1.8;margin:0;font-weight:900;color:#f7f5f0;letter-spacing:0.02em">お問い合わせを<br>受け付けました</h1>
+        <div style="width:52px;height:1px;background:#c2a25e;margin:16px auto"></div>
+        <p style="font-size:13px;line-height:2.1;color:#b7c4bd;margin:0">1営業日以内に、担当よりメールまたは<br>お電話でご連絡いたします。</p>
+        <p style="font-size:11px;line-height:1.9;color:#97a09a;margin:14px 0 0">数日経っても連絡がない場合は、<br>迷惑メールフォルダをご確認ください。</p>
       </div>
     </section>
 
     <section style="padding:48px 24px;background:#ffffff">
       <h2 style="font-size:21px;line-height:1.8;margin:0;font-weight:900;letter-spacing:0.02em">成果の出ない営業代行を、<br>なくしたい。</h2>
-      <div style="width:52px;height:2px;background:#1a5fa8;margin:18px 0 26px"></div>
+      <div style="width:52px;height:2px;background:#145041;margin:18px 0 26px"></div>
       <figure style="margin:0 0 8px">
-        <div style="background:#e9edf1;height:220px;display:flex;align-items:center;justify-content:center;background-image:repeating-linear-gradient(-45deg,rgba(31,41,51,0.04) 0,rgba(31,41,51,0.04) 6px,transparent 6px,transparent 14px)">
-          <span style="font-family:monospace;font-size:11px;color:#64717f">代表・田口の写真</span>
+        <div style="background:#eae5da;height:220px;display:flex;align-items:center;justify-content:center;background-image:repeating-linear-gradient(-45deg,rgba(13,59,46,0.04) 0,rgba(13,59,46,0.04) 6px,transparent 6px,transparent 14px)">
+          <span style="font-family:monospace;font-size:11px;color:#6a746e">代表・田口の写真</span>
         </div>
-        <figcaption style="font-size:11px;color:#64717f;margin-top:8px">ラフ・メイカー株式会社 代表・田口</figcaption>
+        <figcaption style="font-size:11px;color:#6a746e;margin-top:8px">ラフ・メイカー株式会社 代表・田口</figcaption>
       </figure>
-      <p style="font-size:13px;line-height:2.2;margin:18px 0 0;color:#3e4a57">「営業代行にお金を払ったのに、成果はゼロだった」<br>これまで10,000社超の経営者とお会いするなかで、最も多く聞いた言葉です。</p>
-      <p style="font-size:13px;line-height:2.2;margin:14px 0 0;color:#3e4a57">問題は商品ではなく、決裁できる相手に届いていないこと。ただそれだけで、同じ商品でも結果は何倍も変わります。だからWは、10,000社の人脈から「いま課題のある決裁者」を選び抜いて紹介し、万が一届かなかった場合も粗利600万円までを保障する形にしました。</p>
-      <p style="font-size:13px;line-height:2.2;margin:14px 0 0;color:#3e4a57">ご相談のお時間は決して無駄にしませんので、ご連絡まで少々お待ちください。</p>
+      <p style="font-size:13px;line-height:2.2;margin:18px 0 0;color:#3a4642">「営業代行にお金を払ったのに、成果はゼロだった」<br>これまで10,000社超の経営者とお会いするなかで、最も多く聞いた言葉です。</p>
+      <p style="font-size:13px;line-height:2.2;margin:14px 0 0;color:#3a4642">問題は商品ではなく、決裁できる相手に届いていないこと。ただそれだけで、同じ商品でも結果は何倍も変わります。だからWは、10,000社の人脈から「いま課題のある決裁者」を選び抜いて紹介し、万が一届かなかった場合も粗利600万円までを保障する形にしました。</p>
+      <p style="font-size:13px;line-height:2.2;margin:14px 0 0;color:#3a4642">ご相談のお時間は決して無駄にしませんので、ご連絡まで少々お待ちください。</p>
     </section>
 
-    <section style="padding:48px 24px;background:#f4f6f8;border-top:1px solid rgba(31,41,51,0.08)">
+    <section style="padding:48px 24px;background:#f7f5f0;border-top:1px solid rgba(13,59,46,0.08)">
       <h2 style="font-size:19px;line-height:1.8;margin:0;font-weight:900;letter-spacing:0.02em">こんな課題を抱えていた企業様から<br>特にご好評いただいています</h2>
-      <div style="width:52px;height:2px;background:#1a5fa8;margin:18px 0 26px"></div>
+      <div style="width:52px;height:2px;background:#145041;margin:18px 0 26px"></div>
       <div style="display:flex;flex-direction:column;gap:10px">
-        <div style="display:flex;gap:12px;align-items:flex-start;background:#f4f6f8;border:1px solid rgba(31,41,51,0.10);padding:16px 18px">
-          <span style="flex:none;width:22px;height:22px;border-radius:50%;background:#1a5fa8;color:#fff;font-size:12px;font-weight:900;display:flex;align-items:center;justify-content:center;margin-top:3px">✓</span>
+        <div style="display:flex;gap:12px;align-items:flex-start;background:#f7f5f0;border:1px solid rgba(13,59,46,0.10);padding:16px 18px">
+          <span style="flex:none;width:22px;height:22px;border-radius:50%;background:linear-gradient(135deg,#e6cf9c 0%,#c9ab68 45%,#a3853f 100%);color:#132b22;font-size:12px;font-weight:900;display:flex;align-items:center;justify-content:center;margin-top:3px">✓</span>
           <span style="font-size:13px;font-weight:700;line-height:1.8">売上見込みの、10月以降が白いままだ</span>
         </div>
-        <div style="display:flex;gap:12px;align-items:flex-start;background:#f4f6f8;border:1px solid rgba(31,41,51,0.10);padding:16px 18px">
-          <span style="flex:none;width:22px;height:22px;border-radius:50%;background:#1a5fa8;color:#fff;font-size:12px;font-weight:900;display:flex;align-items:center;justify-content:center;margin-top:3px">✓</span>
+        <div style="display:flex;gap:12px;align-items:flex-start;background:#f7f5f0;border:1px solid rgba(13,59,46,0.10);padding:16px 18px">
+          <span style="flex:none;width:22px;height:22px;border-radius:50%;background:linear-gradient(135deg,#e6cf9c 0%,#c9ab68 45%,#a3853f 100%);color:#132b22;font-size:12px;font-weight:900;display:flex;align-items:center;justify-content:center;margin-top:3px">✓</span>
           <span style="font-size:13px;font-weight:700;line-height:1.8">アポは取れる。でも持ち帰られて、そのまま消えていく</span>
         </div>
-        <div style="display:flex;gap:12px;align-items:flex-start;background:#f4f6f8;border:1px solid rgba(31,41,51,0.10);padding:16px 18px">
-          <span style="flex:none;width:22px;height:22px;border-radius:50%;background:#1a5fa8;color:#fff;font-size:12px;font-weight:900;display:flex;align-items:center;justify-content:center;margin-top:3px">✓</span>
+        <div style="display:flex;gap:12px;align-items:flex-start;background:#f7f5f0;border:1px solid rgba(13,59,46,0.10);padding:16px 18px">
+          <span style="flex:none;width:22px;height:22px;border-radius:50%;background:linear-gradient(135deg,#e6cf9c 0%,#c9ab68 45%,#a3853f 100%);color:#132b22;font-size:12px;font-weight:900;display:flex;align-items:center;justify-content:center;margin-top:3px">✓</span>
           <span style="font-size:13px;font-weight:700;line-height:1.8">自分が出れば決まる。決まるのに、出る先がない</span>
         </div>
       </div>
     </section>
   </div>
 
-  <footer style="padding:40px 24px 48px;background:#16202a;color:#8a95a1">
+  <footer style="padding:40px 24px 48px;background:linear-gradient(180deg,#0a2c22 0%,#061d16 100%);color:#97a09a">
     <img src="assets/logo-w-white.png" alt="W" style="height:22px;width:auto;display:block">
     <p style="font-size:11px;margin:10px 0 22px">経営者人脈から決裁者へ直接つなぐ営業支援サービス</p>
     <div style="display:flex;gap:16px;font-size:11px;margin-bottom:16px">
-      <a href="https://laugh-maker.jp/company" target="_blank" rel="noopener" style="color:#8a95a1;white-space:nowrap">会社概要</a>
-      <a href="https://drive.google.com/file/d/1aoLPsLe9loWZZIPutqbFUnU6kxRVnT5W/view?usp=sharing" target="_blank" rel="noopener" style="color:#8a95a1;white-space:nowrap">プライバシーポリシー</a>
+      <a href="https://laugh-maker.jp/company" target="_blank" rel="noopener" style="color:#97a09a;white-space:nowrap">会社概要</a>
+      <a href="https://drive.google.com/file/d/1aoLPsLe9loWZZIPutqbFUnU6kxRVnT5W/view?usp=sharing" target="_blank" rel="noopener" style="color:#97a09a;white-space:nowrap">プライバシーポリシー</a>
     </div>
-    <div style="font-size:10px;color:#64717f">© ラフ・メイカー株式会社</div>
+    <div style="font-size:10px;color:#6a746e">© ラフ・メイカー株式会社</div>
   </footer>
 </div>
 
