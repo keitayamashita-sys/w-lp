@@ -28,6 +28,8 @@ input:focus, select:focus { border-color:#a3853f !important; }
 .sel { width:100%; font:inherit; font-size:14px; font-weight:500; padding:14px 40px 14px 16px; border:1px solid rgba(38,34,30,0.18); background-color:#f7f5f0; color:#1a2420; cursor:pointer; -webkit-appearance:none; appearance:none; background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='9' viewBox='0 0 14 9'%3E%3Cpath d='M1 1l6 6 6-6' fill='none' stroke='%23a3853f' stroke-width='2'/%3E%3C/svg%3E"); background-repeat:no-repeat; background-position:right 16px center; border-radius:0; }
 .sel:invalid { color:#6a746e; }
 .bar-hidden { display:none; }
+.nitte-embed { min-height:720px; width:100%; border:0; display:block; }
+@media (max-width: 800px) { .nitte-embed { min-height:600px; } }
 @media (prefers-reduced-motion: reduce) { * { animation:none !important; } }
 </style>
 </head>
@@ -49,6 +51,25 @@ input:focus, select:focus { border-color:#a3853f !important; }
         <p style="font-size:13px;line-height:2.1;color:#b7c4bd;margin:0">1営業日以内に、担当よりメールまたは<br>お電話でご連絡いたします。</p>
         <p style="font-size:11px;line-height:1.9;color:#97a09a;margin:14px 0 0">数日経っても連絡がない場合は、<br>迷惑メールフォルダをご確認ください。</p>
       </div>
+    </section>
+
+    <section id="schedule" style="padding:44px 0 48px;background:#ffffff;border-top:1px solid rgba(13,59,46,0.10)">
+      <div style="padding:0 24px">
+        <div style="display:flex;align-items:center;gap:9px;margin-bottom:12px">
+          <span style="width:20px;height:2px;background:linear-gradient(90deg,#c2a25e,rgba(194,162,94,0));flex:none"></span>
+          <span style="font-size:10px;font-weight:900;letter-spacing:0.2em;color:#7d6428">日程調整</span>
+        </div>
+        <h2 style="font-size:21px;line-height:1.75;margin:0 0 12px;font-weight:900;color:#0f4436;letter-spacing:0.01em">このまま<span style="background:linear-gradient(90deg,#c2a25e,#e0c589);background-size:100% 2px;background-repeat:no-repeat;background-position:0 100%;padding-bottom:5px">日程を確保</span>できます。</h2>
+        <p style="font-size:13px;line-height:2.05;color:#3c4d47;margin:0 0 20px">ご都合のよい枠をお選びいただければ、折り返しのご連絡を待たずに面談を確定できます。所要時間は30分ほどです。</p>
+      </div>
+      <div style="padding:0 16px">
+        <div style="background:#ffffff;border:1px solid rgba(15,68,54,0.12);box-shadow:0 10px 28px rgba(15,68,54,0.12);overflow:hidden">
+          <!-- Nitte embed begin -->
+          <iframe src="https://nitte.app/zV75hcYfUghtb0UcaKkk4uoqmm83/a03e427e?embed=1#calendar" width="100%" height="100%" frameborder="0" class="nitte-embed" title="面談日程の予約カレンダー" loading="lazy"></iframe>
+          <!-- Nitte embed end -->
+        </div>
+      </div>
+      <p style="font-size:11px;line-height:1.9;color:#5f6f69;margin:14px 24px 0">※ カレンダーが表示されない場合は、担当より1営業日以内にご連絡しますのでそのままお待ちください。</p>
     </section>
 
     <section style="padding:48px 24px;background:#ffffff">
