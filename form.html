@@ -34,51 +34,51 @@ input:focus, select:focus { border-color:#a3853f !important; }
 </style>
 </head>
 <body>
-<div style="max-width:430px;margin:0 auto;background:#ffffff;min-height:100vh;box-shadow:0 0 40px rgba(13,59,46,0.25)">
+<div style="max-width:430px;margin:0 auto;background:#ffffff;min-height:100vh;box-shadow:0 0 34px rgba(15,68,54,0.18)">
 
-  <header style="display:flex;align-items:center;gap:10px;padding:12px 16px;background:rgba(255,255,255,0.96);border-bottom:1px solid rgba(13,59,46,0.12)">
-    <a href="index.html" style="display:block;text-decoration:none"><img src="assets/logo-w-red.png" alt="W" style="height:24px;width:auto;display:block"></a>
-    <div style="font-size:10px;line-height:1.5;color:#6a746e;font-weight:500">経営者人脈から決裁者へ<br>直接つなぐ営業支援</div>
+  <header style="display:flex;align-items:center;gap:10px;padding:12px 16px;background:linear-gradient(180deg,#ffffff 0%,#f6faf8 100%);border-bottom:1px solid #dbe8e2">
+    <a href="index.html" style="display:block;text-decoration:none"><img src="assets/logo-w-gold.png" alt="W" style="height:24px;width:auto;display:block"></a>
+    <div style="font-size:10px;line-height:1.6;color:#5f6f69;font-weight:500">経営者人脈から決裁者へ<br>直接つなぐ営業支援</div>
   </header>
 
-  <div style="background:linear-gradient(160deg,#1d6b56 0%,#145041 34%,#0d3b2e 70%,#08281f 100%);padding:40px 24px;color:#e8ede9;position:relative;overflow:hidden">
-    <div style="position:absolute;inset:0;background:none;pointer-events:none"></div>
-    <div style="position:relative">
-      <h1 style="font-size:25px;line-height:1.6;margin:0;font-weight:900;color:#f7f5f0;letter-spacing:0.02em">紹介できる決裁者が<br>いるか確認する</h1>
-      <div style="width:52px;height:1px;background:#c2a25e;margin:16px 0"></div>
-      <p style="font-size:13px;line-height:2;color:#b7c4bd;margin:0">御社の商材に対して「いま課題のある決裁者」がいるかをお答えします。<br>1営業日以内に担当よりご連絡します。</p>
+  <div style="background:url(data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20width=%27560%27%20height=%27420%27%20viewBox=%270%200%20560%20420%27%3E%3Cg%20fill=%27none%27%20stroke-width=%271.5%27%3E%3Ccircle%20cx=%27205%27%20cy=%27210%27%20r=%27158%27%20stroke=%27%230f4436%27%20opacity=%270.10%27/%3E%3Ccircle%20cx=%27355%27%20cy=%27210%27%20r=%27158%27%20stroke=%27%23a3853f%27%20opacity=%270.13%27/%3E%3C/g%3E%3Cg%20fill=%27none%27%20stroke-width=%271%27%3E%3Ccircle%20cx=%27205%27%20cy=%27210%27%20r=%27108%27%20stroke=%27%230f4436%27%20opacity=%270.06%27/%3E%3Ccircle%20cx=%27355%27%20cy=%27210%27%20r=%27108%27%20stroke=%27%23a3853f%27%20opacity=%270.08%27/%3E%3C/g%3E%3Ccircle%20cx=%27280%27%20cy=%27210%27%20r=%275%27%20fill=%27%23a3853f%27%20opacity=%270.16%27/%3E%3C/svg%3E) right -180px top -40px/560px 420px no-repeat, radial-gradient(ellipse 430px 310px at 88% -8%,rgba(194,162,94,0.13),transparent 70%), linear-gradient(180deg,#ffffff 0%,#f2faf6 24%,#d7ede2 58%,#b5ddc8 84%,#a1d2b9 100%);padding:40px 24px 44px">
+    <div style="display:flex;align-items:center;gap:9px;margin-bottom:12px">
+      <span style="width:20px;height:2px;background:linear-gradient(90deg,#c2a25e,rgba(194,162,94,0));flex:none"></span>
+      <span style="font-size:10px;font-weight:900;letter-spacing:0.2em;color:#7d6428">無料相談フォーム</span>
     </div>
+    <h1 style="font-size:24px;line-height:1.65;margin:0;font-weight:900;color:#0d3f31;letter-spacing:0.02em"><span style="background:linear-gradient(90deg,#c2a25e,#e0c589);background-size:100% 2px;background-repeat:no-repeat;background-position:0 100%;padding-bottom:5px">紹介できる決裁者</span>が<br>いるか確認する</h1>
+    <p style="font-size:13px;line-height:2.05;color:#3c4d47;margin:18px 0 0">御社の商材に対して「いま課題のある決裁者」がいるかをお答えします。1営業日以内に担当よりご連絡します。</p>
   </div>
 
-  <div style="padding:36px 24px 52px">
+  <div style="padding:34px 24px 48px;background:linear-gradient(180deg,#ffffff 0%,#fafdfc 100%)">
     <form id="wform" style="display:flex;flex-direction:column;gap:22px">
       <div>
-        <label for="company" style="display:flex;align-items:center;gap:8px;font-size:13px;font-weight:700;margin-bottom:8px">会社名<span style="background:linear-gradient(135deg,#e6cf9c 0%,#c9ab68 45%,#a3853f 100%);color:#132b22;font-size:10px;font-weight:700;padding:1px 8px">必須</span></label>
-        <input id="company" name="company" type="text" required placeholder="例：ラフ・メイカー株式会社" style="width:100%;font:inherit;font-size:15px;padding:14px 16px;border:1px solid rgba(13,59,46,0.18);background:#f7f5f0;color:#1a2420">
+        <label for="company" style="display:flex;align-items:center;gap:8px;font-size:13px;font-weight:700;margin-bottom:8px;color:#1c2b26">会社名<span style="background:linear-gradient(135deg,#2f8468,#0e4735);color:#fff;font-size:10px;font-weight:700;padding:2px 8px;border-radius:2px">必須</span></label>
+        <input id="company" name="company" type="text" required placeholder="例：ラフ・メイカー株式会社" style="width:100%;font:inherit;font-size:15px;padding:14px 16px;border:1px solid rgba(15,68,54,0.16);border-radius:4px;background:#fafdfc;color:#1c2b26">
       </div>
       <div>
-        <label for="name" style="display:flex;align-items:center;gap:8px;font-size:13px;font-weight:700;margin-bottom:8px">氏名<span style="background:linear-gradient(135deg,#e6cf9c 0%,#c9ab68 45%,#a3853f 100%);color:#132b22;font-size:10px;font-weight:700;padding:1px 8px">必須</span></label>
-        <input id="name" name="name" type="text" required placeholder="例：山田 太郎" style="width:100%;font:inherit;font-size:15px;padding:14px 16px;border:1px solid rgba(13,59,46,0.18);background:#f7f5f0;color:#1a2420">
+        <label for="name" style="display:flex;align-items:center;gap:8px;font-size:13px;font-weight:700;margin-bottom:8px;color:#1c2b26">氏名<span style="background:linear-gradient(135deg,#2f8468,#0e4735);color:#fff;font-size:10px;font-weight:700;padding:2px 8px;border-radius:2px">必須</span></label>
+        <input id="name" name="name" type="text" required placeholder="例：山田 太郎" style="width:100%;font:inherit;font-size:15px;padding:14px 16px;border:1px solid rgba(15,68,54,0.16);border-radius:4px;background:#fafdfc;color:#1c2b26">
       </div>
       <div>
-        <label for="email" style="display:flex;align-items:center;gap:8px;font-size:13px;font-weight:700;margin-bottom:8px">メールアドレス<span style="background:linear-gradient(135deg,#e6cf9c 0%,#c9ab68 45%,#a3853f 100%);color:#132b22;font-size:10px;font-weight:700;padding:1px 8px">必須</span></label>
-        <input id="email" name="email" type="email" required placeholder="例：yamada@example.co.jp" style="width:100%;font:inherit;font-size:15px;padding:14px 16px;border:1px solid rgba(13,59,46,0.18);background:#f7f5f0;color:#1a2420">
+        <label for="email" style="display:flex;align-items:center;gap:8px;font-size:13px;font-weight:700;margin-bottom:8px;color:#1c2b26">メールアドレス<span style="background:linear-gradient(135deg,#2f8468,#0e4735);color:#fff;font-size:10px;font-weight:700;padding:2px 8px;border-radius:2px">必須</span></label>
+        <input id="email" name="email" type="email" required placeholder="例：yamada@example.co.jp" style="width:100%;font:inherit;font-size:15px;padding:14px 16px;border:1px solid rgba(15,68,54,0.16);border-radius:4px;background:#fafdfc;color:#1c2b26">
       </div>
       <div>
-        <label for="tel" style="display:flex;align-items:center;gap:8px;font-size:13px;font-weight:700;margin-bottom:8px">電話番号<span style="background:linear-gradient(135deg,#e6cf9c 0%,#c9ab68 45%,#a3853f 100%);color:#132b22;font-size:10px;font-weight:700;padding:1px 8px">必須</span></label>
-        <input id="tel" name="tel" type="tel" required placeholder="例：03-1234-5678" style="width:100%;font:inherit;font-size:15px;padding:14px 16px;border:1px solid rgba(13,59,46,0.18);background:#f7f5f0;color:#1a2420">
+        <label for="tel" style="display:flex;align-items:center;gap:8px;font-size:13px;font-weight:700;margin-bottom:8px;color:#1c2b26">電話番号<span style="background:linear-gradient(135deg,#2f8468,#0e4735);color:#fff;font-size:10px;font-weight:700;padding:2px 8px;border-radius:2px">必須</span></label>
+        <input id="tel" name="tel" type="tel" required placeholder="例：03-1234-5678" style="width:100%;font:inherit;font-size:15px;padding:14px 16px;border:1px solid rgba(15,68,54,0.16);border-radius:4px;background:#fafdfc;color:#1c2b26">
       </div>
       <div>
-        <label for="budget" style="display:flex;align-items:center;gap:8px;font-size:13px;font-weight:700;margin-bottom:8px">予算として年間300万円以上を確保できますか？<span style="background:linear-gradient(135deg,#e6cf9c 0%,#c9ab68 45%,#a3853f 100%);color:#132b22;font-size:10px;font-weight:700;padding:1px 8px;flex:none">必須</span></label>
+        <label for="budget" style="display:flex;align-items:center;gap:8px;font-size:13px;font-weight:700;margin-bottom:8px;color:#1c2b26">予算として年間300万円以上を確保できますか？<span style="background:linear-gradient(135deg,#2f8468,#0e4735);color:#fff;font-size:10px;font-weight:700;padding:2px 8px;border-radius:2px;flex:none">必須</span></label>
         <select id="budget" name="budget" required class="sel">
           <option value="" disabled selected>選択してください</option>
           <option>はい</option>
           <option>いいえ</option>
         </select>
-        <p style="font-size:11px;line-height:1.8;color:#145041;margin:8px 0 0">※誠に恐縮ながら、「いいえ」の場合は今回のご案内の対象外となります</p>
+        <p style="font-size:11px;line-height:1.8;color:#8a6f30;margin:8px 0 0">※誠に恐縮ながら、「いいえ」の場合は今回のご案内の対象外となります</p>
       </div>
       <div>
-        <label for="issue" style="display:flex;align-items:center;gap:8px;font-size:13px;font-weight:700;margin-bottom:8px">現在、貴社が抱えている課題を教えてください<span style="background:linear-gradient(135deg,#e6cf9c 0%,#c9ab68 45%,#a3853f 100%);color:#132b22;font-size:10px;font-weight:700;padding:1px 8px;flex:none">必須</span></label>
+        <label for="issue" style="display:flex;align-items:center;gap:8px;font-size:13px;font-weight:700;margin-bottom:8px;color:#1c2b26">現在、貴社が抱えている課題を教えてください<span style="background:linear-gradient(135deg,#2f8468,#0e4735);color:#fff;font-size:10px;font-weight:700;padding:2px 8px;border-radius:2px;flex:none">必須</span></label>
         <select id="issue" name="issue" required class="sel">
           <option value="" disabled selected>選択してください</option>
           <option>売上が伸び悩んでいる／頭打ちになっている</option>
@@ -90,7 +90,7 @@ input:focus, select:focus { border-color:#a3853f !important; }
         </select>
       </div>
       <div>
-        <label for="interest" style="display:flex;align-items:center;gap:8px;font-size:13px;font-weight:700;margin-bottom:8px">今回、特に興味を持たれた内容を教えてください<span style="background:linear-gradient(135deg,#e6cf9c 0%,#c9ab68 45%,#a3853f 100%);color:#132b22;font-size:10px;font-weight:700;padding:1px 8px;flex:none">必須</span></label>
+        <label for="interest" style="display:flex;align-items:center;gap:8px;font-size:13px;font-weight:700;margin-bottom:8px;color:#1c2b26">今回、特に興味を持たれた内容を教えてください<span style="background:linear-gradient(135deg,#2f8468,#0e4735);color:#fff;font-size:10px;font-weight:700;padding:2px 8px;border-radius:2px;flex:none">必須</span></label>
         <select id="interest" name="interest" required class="sel">
           <option value="" disabled selected>選択してください</option>
           <option>いま課題のある決裁者とのマッチング・紹介</option>
@@ -101,17 +101,17 @@ input:focus, select:focus { border-color:#a3853f !important; }
           <option>粗利600万円の最低保障（下振れリスクの固定）</option>
         </select>
       </div>
-      <div style="font-size:11px;line-height:1.9;color:#6a746e;background:#f7f5f0;padding:14px 16px">
+      <div style="font-size:11px;line-height:1.9;color:#5f6f69;background:linear-gradient(180deg,#f4faf7,#eaf3f0);border:1px solid #dbe8e2;padding:14px 16px">
         送信いただいた情報は、お問い合わせ対応の目的にのみ使用します。詳しくは<a href="https://drive.google.com/file/d/1aoLPsLe9loWZZIPutqbFUnU6kxRVnT5W/view?usp=sharing" target="_blank" rel="noopener">プライバシーポリシー</a>をご確認ください。
       </div>
-      <button type="submit" style="font-family:inherit;background:linear-gradient(135deg,#e6cf9c 0%,#c9ab68 45%,#a3853f 100%);color:#132b22;font-weight:900;font-size:17px;padding:18px 16px;border:none;border-radius:10px;cursor:pointer;letter-spacing:0.08em;box-shadow:0 12px 28px rgba(26,95,168,0.4), inset 0 1px 0 rgba(255,255,255,0.3)">この内容で確認する</button>
+      <button type="submit" style="font-family:inherit;background:linear-gradient(135deg,#2f8468 0%,#1a6350 48%,#0e4735 100%);color:#fff;font-weight:900;font-size:17px;padding:19px 12px;border:none;border-radius:6px;cursor:pointer;box-shadow:0 12px 28px rgba(15,68,54,0.34), inset 0 1px 0 rgba(255,255,255,0.24)">この内容で確認する</button>
     </form>
-    <div style="text-align:center;margin-top:30px">
-      <a href="index.html" style="font-size:12px;color:#6a746e">← LPに戻る</a>
+    <div style="text-align:center;margin-top:28px">
+      <a href="index.html" style="font-size:12px;color:#5f6f69">← LPに戻る</a>
     </div>
   </div>
 
-  <footer style="padding:22px;background:linear-gradient(180deg,#0a2c22 0%,#061d16 100%);font-size:10px;color:#6a746e;text-align:center">© ラフ・メイカー株式会社</footer>
+  <footer style="padding:24px;background:linear-gradient(180deg,#a1d2b9 0%,#8bc3ab 100%);font-size:10px;color:#33604f;text-align:center">© ラフ・メイカー株式会社</footer>
 </div>
 <script>
 (function(){
