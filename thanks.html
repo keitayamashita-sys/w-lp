@@ -26,6 +26,9 @@ a[style*="background:linear-gradient"]:hover, button:hover { filter:brightness(1
 @keyframes popIn { from { opacity:0; transform:scale(0.85); } to { opacity:1; transform:scale(1); } }
 details summary::-webkit-details-marker { display:none; }
 details summary { list-style:none; }
+details.faq summary { position:relative; padding-right:30px; }
+details.faq summary::after { content:"\FF0B"; position:absolute; right:0; top:15px; font-size:15px; font-weight:800; color:#cd5408; line-height:1; }
+details.faq[open] summary::after { content:"\FF0D"; }
 :focus { outline:none; }
 :focus-visible { outline:2px solid #cd5408; outline-offset:2px; }
 input:focus, select:focus { border-color:#cd5408 !important; }
