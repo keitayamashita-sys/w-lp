@@ -10,91 +10,85 @@
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700;900&amp;family=Zen+Old+Mincho:wght@400;500;600;700;900&amp;display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&amp;display=swap">
 <style>
-body { margin:0; background:#e7e1d4; color:#45403a; font-family:"Zen Kaku Gothic New", system-ui, sans-serif; font-size:15px; line-height:1.95; letter-spacing:0.03em; font-feature-settings:"palt" 1; -webkit-font-smoothing:antialiased; }
+body { margin:0; background:#e4ded0; color:#241f19; font-family:"Noto Sans JP", system-ui, -apple-system, sans-serif; font-size:16px; line-height:1.8; -webkit-font-smoothing:antialiased; }
 * { box-sizing:border-box; }
-img { max-width:100%; }
-a { color:#a83c1c; }
-h1, h2, h3, p, figure { margin:0; }
-.wrap { max-width:430px; margin:0 auto; background:#f6f3ec; padding-bottom:92px; }
-.mi { font-family:"Zen Old Mincho", "Noto Serif JP", serif; font-weight:700; font-feature-settings:"palt" 1; }
-.h1 { font-family:"Zen Old Mincho", serif; font-size:39px; line-height:1.3; letter-spacing:-0.035em; color:#1b1814; font-weight:700; }
-.h2 { font-family:"Zen Old Mincho", serif; font-size:28px; line-height:1.34; letter-spacing:-0.032em; color:#1b1814; font-weight:700; }
-.h3 { font-family:"Zen Old Mincho", serif; font-size:20px; line-height:1.5; letter-spacing:-0.02em; color:#1b1814; font-weight:700; }
-.lead { font-size:15px; line-height:2.05; color:#45403a; }
-.sm { font-size:12.5px; line-height:1.9; color:#8a8377; letter-spacing:0.02em; }
-.eyebrow { font-size:11px; letter-spacing:0.24em; font-weight:700; color:#8a8377; }
-.num { font-family:"Zen Old Mincho", serif; font-weight:700; letter-spacing:-0.025em; line-height:1; color:#1b1814; }
-.rule { height:1px; background:#ddd7ca; border:0; margin:0; }
-.cta { display:block; background:#a83c1c; color:#fff7f0; text-decoration:none; text-align:center; font-weight:700; font-size:17px; letter-spacing:0.05em; padding:21px 16px; border-radius:2px; }
-.cta:hover { background:#8c3115; color:#fff7f0; }
-.ctab { display:block; background:#a83c1c; color:#fff7f0; text-decoration:none; text-align:center; font-weight:700; font-size:15px; letter-spacing:0.04em; padding:14px 12px; border-radius:2px; }
-.ctab:hover { background:#8c3115; color:#fff7f0; }
-section[id] { scroll-margin-top:60px; }
+a { color:#7a5e28; }
+a[style*="background:linear-gradient"]:hover, button:hover { filter:brightness(1.08); }
+@keyframes marquee { from { transform:translateX(0); } to { transform:translateX(-50%); } }
+@keyframes fadeUp { from { opacity:0; transform:translateY(18px); } to { opacity:1; transform:translateY(0); } }
+@keyframes growX { from { transform:scaleX(0); } to { transform:scaleX(1); } }
+@keyframes notifyDrop { 0% { opacity:0; transform:translateY(-140%); } 6% { opacity:1; transform:translateY(6%); } 9% { opacity:1; transform:translateY(0); } 46% { opacity:1; transform:translateY(0); } 56% { opacity:0; transform:translateY(-70%); } 100% { opacity:0; transform:translateY(-140%); } }
+@keyframes pulseDot { 0%, 100% { transform:scale(1); opacity:1; } 50% { transform:scale(1.5); opacity:0.5; } }
+@keyframes rowIn { 0%, 12% { opacity:0.35; } 22%, 100% { opacity:1; } }
+@keyframes barGrow { from { width:0; } }
+@keyframes popIn { from { opacity:0; transform:scale(0.85); } to { opacity:1; transform:scale(1); } }
+section[id] { scroll-margin-top:72px; }
 details summary::-webkit-details-marker { display:none; }
 details summary { list-style:none; }
-details.faq summary { position:relative; padding-right:28px; }
-details.faq summary::after { content:"\002B"; position:absolute; right:2px; top:16px; font-size:17px; font-weight:400; color:#a83c1c; line-height:1; }
-details.faq[open] summary::after { content:"\2212"; }
+details.faq summary { position:relative; padding-right:32px; }
+details.faq summary::after { content:"\FF0B"; position:absolute; right:0; top:19px; font-size:17px; font-weight:800; color:#7a5e28; line-height:1; }
+details.faq[open] summary::after { content:"\FF0D"; }
 :focus { outline:none; }
-:focus-visible { outline:2px solid #a83c1c; outline-offset:2px; }
-.sel { width:100%; font:inherit; font-size:16px; padding:14px 38px 14px 14px; border:1px solid #ccc4b3; background-color:#fffdf8; color:#1b1814; cursor:pointer; -webkit-appearance:none; appearance:none; background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='13' height='8' viewBox='0 0 13 8'%3E%3Cpath d='M1 1l5.5 5.5L12 1' fill='none' stroke='%23a83c1c' stroke-width='1.4'/%3E%3C/svg%3E"); background-repeat:no-repeat; background-position:right 14px center; border-radius:2px; }
-.sel:invalid { color:#a49c8d; }
-.inp { width:100%; font:inherit; font-size:16px; padding:14px; border:1px solid #ccc4b3; border-radius:2px; background:#fffdf8; color:#1b1814; }
-.inp::placeholder { color:#b3ab9b; }
-.inp:focus, .sel:focus { border-color:#a83c1c; }
+:focus-visible { outline:2px solid #7a5e28; outline-offset:2px; }
+input:focus, select:focus { border-color:#7a5e28 !important; }
+.sel { width:100%; font:inherit; font-size:16px; font-weight:500; padding:14px 40px 14px 16px; border:1px solid rgba(38,34,30,0.18); background-color:#f7f4ec; color:#241f19; cursor:pointer; -webkit-appearance:none; appearance:none; background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='9' viewBox='0 0 14 9'%3E%3Cpath d='M1 1l6 6 6-6' fill='none' stroke='%237a5e28' stroke-width='2'/%3E%3C/svg%3E"); background-repeat:no-repeat; background-position:right 16px center; border-radius:0; }
+.sel:invalid { color:#857e70; }
+.bar-hidden { display:none; }
 .hscroll { overflow-x:auto; -webkit-overflow-scrolling:touch; scrollbar-width:none; scroll-snap-type:x mandatory; }
 .hscroll::-webkit-scrollbar { display:none; }
-.bar-hidden { display:none; }
 .nitte-embed { min-height:720px; width:100%; border:0; display:block; }
 @media (max-width: 800px) { .nitte-embed { min-height:600px; } }
-@keyframes marquee { from { transform:translateX(0); } to { transform:translateX(-50%); } }
 @media (prefers-reduced-motion: reduce) { * { animation:none !important; } }
 </style>
 </head>
 <body>
-<div class="wrap" style="min-height:100vh;padding-bottom:0">
-  <header style="display:flex;align-items:center;gap:12px;padding:11px 20px;background:#f6f3ec;border-bottom:1px solid #ddd7ca">
-    <a href="index.html" style="display:block;text-decoration:none"><img src="assets/logo-w-gold.png" alt="W" style="height:22px;width:auto;display:block"></a>
-    <div style="font-size:11px;line-height:1.7;color:#8a8377;letter-spacing:0.04em">粗利600万円 最低保証の<br>決裁者紹介サービス</div>
+<div style="max-width:430px;margin:0 auto;background:#fffdf9;min-height:100vh;box-shadow:0 0 34px rgba(0,0,0,0.18)">
+
+  <header style="display:flex;align-items:center;gap:10px;padding:12px 16px;background:#fffdf9;border-bottom:1px solid #e4ded0">
+    <a href="index.html" style="display:block;text-decoration:none"><img src="assets/logo-w-gold.png" alt="W" style="height:24px;width:auto;display:block"></a>
+    <div style="font-size:11.5px;line-height:1.6;color:#6a6357;font-weight:500">粗利600万円保証付きの<br>営業支援サービス</div>
   </header>
 
-  <section style="background:#f6f3ec;padding:44px 24px 40px">
-    <div class="eyebrow" style="margin-bottom:20px">資料ダウンロード</div>
-    <h1 class="h1" style="font-size:32px">無料で資料を<br>ダウンロード</h1>
-    <p class="lead" style="margin-top:20px;max-width:344px">サービス内容・審査基準・保証の適用条件をまとめた資料をお送りします。1営業日以内に担当よりご連絡します。</p>
-  </section>
+  <div style="background:url(data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20width=%27560%27%20height=%27420%27%20viewBox=%270%200%20560%20420%27%3E%3Cg%20fill=%27none%27%20stroke-width=%271.5%27%3E%3Ccircle%20cx=%27205%27%20cy=%27210%27%20r=%27158%27%20stroke=%27%233b3228%27%20opacity=%270.10%27/%3E%3Ccircle%20cx=%27355%27%20cy=%27210%27%20r=%27158%27%20stroke=%27%23a3853f%27%20opacity=%270.13%27/%3E%3C/g%3E%3Cg%20fill=%27none%27%20stroke-width=%271%27%3E%3Ccircle%20cx=%27205%27%20cy=%27210%27%20r=%27108%27%20stroke=%27%233b3228%27%20opacity=%270.06%27/%3E%3Ccircle%20cx=%27355%27%20cy=%27210%27%20r=%27108%27%20stroke=%27%23a3853f%27%20opacity=%270.08%27/%3E%3C/g%3E%3Ccircle%20cx=%27280%27%20cy=%27210%27%20r=%275%27%20fill=%27%23a3853f%27%20opacity=%270.16%27/%3E%3C/svg%3E) right -180px top -40px/560px 420px no-repeat, radial-gradient(ellipse 430px 310px at 88% -8%,rgba(194,162,94,0.13),transparent 70%), #fffdf9;padding:40px 24px 44px">
+    <div style="display:flex;align-items:center;gap:9px;margin-bottom:12px">
+      <span style="width:20px;height:2px;background:linear-gradient(90deg,#a33f12,rgba(194,162,94,0));flex:none"></span>
+      <span style="font-size:11.5px;font-weight:900;letter-spacing:0.2em;color:#7a5e28">資料ダウンロード</span>
+    </div>
+    <h1 style="font-size:25px;line-height:1.65;margin:0;font-weight:900;color:#241f19;letter-spacing:0.02em"><span style="background:linear-gradient(90deg,#a33f12,#c2571f);background-size:100% 2px;background-repeat:no-repeat;background-position:0 100%;padding-bottom:5px">無料で資料</span>を<br>ダウンロード</h1>
+    <p style="font-size:14.5px;line-height:2.05;color:#4a443b;margin:18px 0 0">サービス内容・審査基準・保証の適用条件をまとめた資料をお送りします。1営業日以内に担当よりご連絡します。</p>
+  </div>
 
-  <div style="padding:36px 24px 52px;background:#fffdf8;border-top:1px solid #ddd7ca">
-    <form id="wform" style="display:flex;flex-direction:column;gap:20px">
+  <div style="padding:34px 24px 48px;background:#fffdf9">
+    <form id="wform" style="display:flex;flex-direction:column;gap:22px">
       <div>
-        <label for="company" style="display:flex;align-items:center;gap:8px;font-size:14px;font-weight:700;margin-bottom:7px;color:#1b1814">会社名<span style="background:#a83c1c;color:#fff7f0;font-size:11px;font-weight:700;padding:2px 7px;border-radius:2px;letter-spacing:0.06em">必須</span></label>
-        <input id="company" name="company" type="text" required placeholder="例：ラフ・メイカー株式会社" class="inp">
+        <label for="company" style="display:flex;align-items:center;gap:8px;font-size:14.5px;font-weight:700;margin-bottom:8px;color:#241f19">会社名<span style="background:#7a5e28;color:#fffdf9;font-size:11.5px;font-weight:700;padding:2px 8px;border-radius:2px">必須</span></label>
+        <input id="company" name="company" type="text" required placeholder="例：ラフ・メイカー株式会社" style="width:100%;font:inherit;font-size:16px;padding:14px 16px;border:1px solid rgba(0,0,0,0.16);border-radius:4px;background:#faf7f0;color:#241f19">
       </div>
       <div>
-        <label for="name" style="display:flex;align-items:center;gap:8px;font-size:14px;font-weight:700;margin-bottom:7px;color:#1b1814">氏名<span style="background:#a83c1c;color:#fff7f0;font-size:11px;font-weight:700;padding:2px 7px;border-radius:2px;letter-spacing:0.06em">必須</span></label>
-        <input id="name" name="name" type="text" required placeholder="例：山田 太郎" class="inp">
+        <label for="name" style="display:flex;align-items:center;gap:8px;font-size:14.5px;font-weight:700;margin-bottom:8px;color:#241f19">氏名<span style="background:#7a5e28;color:#fffdf9;font-size:11.5px;font-weight:700;padding:2px 8px;border-radius:2px">必須</span></label>
+        <input id="name" name="name" type="text" required placeholder="例：山田 太郎" style="width:100%;font:inherit;font-size:16px;padding:14px 16px;border:1px solid rgba(0,0,0,0.16);border-radius:4px;background:#faf7f0;color:#241f19">
       </div>
       <div>
-        <label for="email" style="display:flex;align-items:center;gap:8px;font-size:14px;font-weight:700;margin-bottom:7px;color:#1b1814">メールアドレス<span style="background:#a83c1c;color:#fff7f0;font-size:11px;font-weight:700;padding:2px 7px;border-radius:2px;letter-spacing:0.06em">必須</span></label>
-        <input id="email" name="email" type="email" required placeholder="例：yamada@example.co.jp" class="inp">
+        <label for="email" style="display:flex;align-items:center;gap:8px;font-size:14.5px;font-weight:700;margin-bottom:8px;color:#241f19">メールアドレス<span style="background:#7a5e28;color:#fffdf9;font-size:11.5px;font-weight:700;padding:2px 8px;border-radius:2px">必須</span></label>
+        <input id="email" name="email" type="email" required placeholder="例：yamada@example.co.jp" style="width:100%;font:inherit;font-size:16px;padding:14px 16px;border:1px solid rgba(0,0,0,0.16);border-radius:4px;background:#faf7f0;color:#241f19">
       </div>
       <div>
-        <label for="tel" style="display:flex;align-items:center;gap:8px;font-size:14px;font-weight:700;margin-bottom:7px;color:#1b1814">電話番号<span style="background:#a83c1c;color:#fff7f0;font-size:11px;font-weight:700;padding:2px 7px;border-radius:2px;letter-spacing:0.06em">必須</span></label>
-        <input id="tel" name="tel" type="tel" required placeholder="例：03-1234-5678" class="inp">
+        <label for="tel" style="display:flex;align-items:center;gap:8px;font-size:14.5px;font-weight:700;margin-bottom:8px;color:#241f19">電話番号<span style="background:#7a5e28;color:#fffdf9;font-size:11.5px;font-weight:700;padding:2px 8px;border-radius:2px">必須</span></label>
+        <input id="tel" name="tel" type="tel" required placeholder="例：03-1234-5678" style="width:100%;font:inherit;font-size:16px;padding:14px 16px;border:1px solid rgba(0,0,0,0.16);border-radius:4px;background:#faf7f0;color:#241f19">
       </div>
       <div>
-        <label for="budget" style="display:flex;align-items:center;gap:8px;font-size:14px;font-weight:700;margin-bottom:7px;color:#1b1814">年間300万円の投資枠を確保できますか？<span style="background:#a83c1c;color:#fff7f0;font-size:11px;font-weight:700;padding:2px 7px;border-radius:2px;flex:none;letter-spacing:0.06em">必須</span></label>
+        <label for="budget" style="display:flex;align-items:center;gap:8px;font-size:14.5px;font-weight:700;margin-bottom:8px;color:#241f19">予算として年間300万円以上を確保できますか？<span style="background:#7a5e28;color:#fffdf9;font-size:11.5px;font-weight:700;padding:2px 8px;border-radius:2px;flex:none">必須</span></label>
         <select id="budget" name="budget" required class="sel">
           <option value="" disabled selected>選択してください</option>
           <option>はい</option>
           <option>いいえ</option>
         </select>
-        <p class="sm" style="margin-top:7px">※ 恐れ入りますが、「いいえ」の場合は今回のご案内の対象外となります。</p>
+        <p style="font-size:12.5px;line-height:1.8;color:#7a5e28;margin:8px 0 0">※誠に恐縮ながら、「いいえ」の場合は今回のご案内の対象外となります</p>
       </div>
       <div>
-        <label for="issue" style="display:flex;align-items:center;gap:8px;font-size:14px;font-weight:700;margin-bottom:7px;color:#1b1814">いま抱えている課題を教えてください<span style="background:#a83c1c;color:#fff7f0;font-size:11px;font-weight:700;padding:2px 7px;border-radius:2px;flex:none;letter-spacing:0.06em">必須</span></label>
+        <label for="issue" style="display:flex;align-items:center;gap:8px;font-size:14.5px;font-weight:700;margin-bottom:8px;color:#241f19">現在、貴社が抱えている課題を教えてください<span style="background:#7a5e28;color:#fffdf9;font-size:11.5px;font-weight:700;padding:2px 8px;border-radius:2px;flex:none">必須</span></label>
         <select id="issue" name="issue" required class="sel">
           <option value="" disabled selected>選択してください</option>
           <option>売上が伸び悩んでいる／頭打ちになっている</option>
@@ -106,27 +100,38 @@ details.faq[open] summary::after { content:"\2212"; }
         </select>
       </div>
       <div>
-        <label for="interest" style="display:flex;align-items:center;gap:8px;font-size:14px;font-weight:700;margin-bottom:7px;color:#1b1814">特に興味を持たれた内容を教えてください<span style="background:#a83c1c;color:#fff7f0;font-size:11px;font-weight:700;padding:2px 7px;border-radius:2px;flex:none;letter-spacing:0.06em">必須</span></label>
+        <label for="interest" style="display:flex;align-items:center;gap:8px;font-size:14.5px;font-weight:700;margin-bottom:8px;color:#241f19">今回、特に興味を持たれた内容を教えてください<span style="background:#7a5e28;color:#fffdf9;font-size:11.5px;font-weight:700;padding:2px 8px;border-radius:2px;flex:none">必須</span></label>
         <select id="interest" name="interest" required class="sel">
           <option value="" disabled selected>選択してください</option>
           <option>ニーズを確認済みの決裁者とのマッチング・紹介</option>
           <option>代表・田口のマーケティングスキルを活用できる点</option>
-          <option>15年で築いた18,000社のビジネス人脈</option>
+          <option>企業800社・15年で築いた18,000社の人脈</option>
           <option>ターゲットへのアプローチ代行</option>
           <option>資金調達・PR・人材・DXまで含む経営ブレインサポート</option>
           <option>粗利600万円の最低保証（下振れリスクの固定）</option>
         </select>
       </div>
-      <p class="sm" style="border-top:1px solid #e6e0d3;padding-top:14px">送信いただいた情報は、お問い合わせ対応の目的にのみ使用します。詳しくは<a href="https://drive.google.com/file/d/1aoLPsLe9loWZZIPutqbFUnU6kxRVnT5W/view?usp=sharing" target="_blank" rel="noopener">プライバシーポリシー</a>をご確認ください。</p>
-      <button type="submit" class="cta" style="font-family:inherit;width:100%;border:none;cursor:pointer">無料で資料を受け取る</button>
-      <p class="sm" style="text-align:center">入力は30秒。ご相談・審査まで費用はかかりません。</p>
+      <div style="font-size:12.5px;line-height:1.9;color:#6a6357;background:#f7f4ec;border:1px solid #e4ded0;padding:14px 16px">
+        送信いただいた情報は、お問い合わせ対応の目的にのみ使用します。詳しくは<a href="https://drive.google.com/file/d/1aoLPsLe9loWZZIPutqbFUnU6kxRVnT5W/view?usp=sharing" target="_blank" rel="noopener">プライバシーポリシー</a>をご確認ください。
+      </div>
+      <div>
+        <div style="display:flex;align-items:center;justify-content:center;gap:11px;margin-bottom:10px">
+          <span style="width:2px;height:16px;background:#7a5e28;transform:rotate(-20deg);border-radius:1px;flex:none"></span>
+          <span style="font-size:13px;font-weight:900;color:#7a5e28;letter-spacing:0.06em;white-space:nowrap">30秒で入力完了</span>
+          <span style="width:2px;height:16px;background:#7a5e28;transform:rotate(20deg);border-radius:1px;flex:none"></span>
+        </div>
+        <button type="submit" style="font-family:inherit;width:100%;display:flex;align-items:center;justify-content:center;gap:10px;background:linear-gradient(180deg,#c2571f 0%,#a33f12 100%);color:#fffdf9;font-weight:900;font-size:17px;padding:18px 14px;border:none;border-radius:9999px;cursor:pointer;line-height:1.5;box-shadow:0 4px 0 #7a2c0b, 0 8px 20px rgba(163,63,18,0.30)">
+          <span>この内容で資料を受け取る</span>
+          <span style="flex:none;width:26px;height:26px;border-radius:50%;background:rgba(255,255,255,0.16);border:1px solid rgba(255,255,255,0.55);display:flex;align-items:center;justify-content:center;font-size:14.5px;line-height:1">&#8594;</span>
+        </button>
+      </div>
     </form>
-    <div style="text-align:center;margin-top:30px">
-      <a href="index.html" style="font-size:13px;color:#8a8377;text-decoration:none;border-bottom:1px solid #ddd7ca;padding-bottom:2px">サービス内容のページに戻る</a>
+    <div style="text-align:center;margin-top:28px">
+      <a href="index.html" style="font-size:13px;color:#6a6357">← LPに戻る</a>
     </div>
   </div>
 
-  <footer style="padding:26px 24px;background:#16130f;font-size:11.5px;color:#6f6759;text-align:center">&copy; ラフ・メイカー株式会社</footer>
+  <footer style="padding:24px;background:#16120d;font-size:11.5px;color:#857e70;text-align:center">© ラフ・メイカー株式会社</footer>
 </div>
 <script>
 (function(){
